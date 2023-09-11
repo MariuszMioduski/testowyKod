@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="4.0" xmlns="https://jakarta.ee/xml/ns/jakartaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                                  https://jakarta.ee/xml/ns/jakartaee/web-facesconfig_4_0.xsd">
+
+    <application>
+        <locale-config>
+            <default-locale>pl</default-locale>
+            <supported-locale>pl</supported-locale>
+<!--            <supported-locale>en</supported-locale>-->
+        </locale-config>
+<!--        Resource for application messages-->
+<!--        <resource-bundle>-->
+<!--            <base-name>i18n.messages</base-name>-->
+<!--            <var>msg</var>-->
+<!--        </resource-bundle>-->
+<!--&lt;!&ndash;        Resource for internal JSF messages&ndash;&gt;-->
+<!--        <message-bundle>-->
+<!--            i18n.jsf_messages-->
+<!--        </message-bundle>-->
+<!--        For BeanValidation messages, there must be a ValidationMessages resource in the root of resources folder.
+            That resource mustn't be declared here! -->
+    </application>
+
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+
+        <navigation-case>
+            <from-outcome>main</from-outcome>
+            <to-view-id>/index.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>success</from-outcome>
+            <to-view-id>/common/success.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>createServiceman</from-outcome>
+            <to-view-id>/accounts/createServiceman.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>createAdmin</from-outcome>
+            <to-view-id>/accounts/createAdmin.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+
+        <navigation-case>
+            <from-outcome>listAccounts</from-outcome>
+            <to-view-id>/accounts/listAccounts.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>editAccount</from-outcome>
+            <to-view-id>/accounts/editAccount.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>error</from-outcome>
+            <to-view-id>/error/error.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <!--        <navigation-case>-->
+        <!--            <from-outcome>cancelAction</from-outcome>-->
+        <!--            <to-view-id>/index.xhtml</to-view-id>-->
+        <!--            <redirect/>-->
+        <!--        </navigation-case>-->
+<!--        <navigation-case>-->
+<!--            <from-outcome>editSelfAccount</from-outcome>-->
+<!--            <to-view-id>/accounts/editSelfAccount.xhtml</to-view-id>-->
+<!--            <redirect/>-->
+<!--        </navigation-case>-->
+<!--        <navigation-case>-->
+<!--            <from-outcome>changeAccountPassword</from-outcome>-->
+<!--            <to-view-id>/accounts/changeAccountPassword.xhtml</to-view-id>-->
+<!--            <redirect/>-->
+<!--        </navigation-case>-->
+<!--        <navigation-case>-->
+<!--            <from-outcome>changeSelfPassword</from-outcome>-->
+<!--            <to-view-id>/accounts/changeSelfPassword.xhtml</to-view-id>-->
+<!--            <redirect/>-->
+<!--        </navigation-case>-->
+
+
+<!--        <navigation-case>-->
+<!--            <from-outcome>authenticate</from-outcome>-->
+<!--            <to-view-id>/login/customFormLogin.xhtml</to-view-id>-->
+<!--            <redirect/>-->
+<!--        </navigation-case>-->
+<!--        <navigation-case>-->
+<!--            <from-outcome>loginError</from-outcome>-->
+<!--            <to-view-id>/login/customFormLoginError.xhtml</to-view-id>-->
+<!--            <redirect/>-->
+<!--        </navigation-case>-->
+
+<!--        <navigation-case>-->
+<!--            <from-outcome>listClientsForRent</from-outcome>-->
+<!--            <to-view-id>/clients/listClientsForRent.xhtml</to-view-id>-->
+<!--            <redirect/>-->
+<!--        </navigation-case>-->
+<!--        <navigation-case>-->
+<!--            <from-outcome>listVehiclesToRentForClient</from-outcome>-->
+<!--            <to-view-id>/vehicles/listVehiclesToRentForClient.xhtml</to-view-id>-->
+<!--            <redirect/>-->
+<!--        </navigation-case>-->
+<!--        <navigation-case>-->
+<!--            <from-outcome>listVehiclesToRentForSelf</from-outcome>-->
+<!--            <to-view-id>/vehicles/listVehiclesToRentForSelf.xhtml</to-view-id>-->
+<!--            <redirect/>-->
+<!--        </navigation-case>-->
+<!--        <navigation-case>-->
+<!--            <from-outcome>listRents</from-outcome>-->
+<!--            <to-view-id>/rents/listRents.xhtml</to-view-id>-->
+<!--            <redirect/>-->
+<!--        </navigation-case>-->
+<!--        <navigation-case>-->
+<!--            <from-outcome>registerClient</from-outcome>-->
+<!--            <to-view-id>/clients/registerClient.xhtml</to-view-id>-->
+<!--            <redirect/>-->
+<!--        </navigation-case>-->
+<!--        <navigation-case>-->
+<!--            <from-outcome>listClients</from-outcome>-->
+<!--            <to-view-id>/clients/listClients.xhtml</to-view-id>-->
+<!--            <redirect/>-->
+<!--        </navigation-case>-->
+<!--        <navigation-case>-->
+<!--            <from-outcome>editInvoiceData</from-outcome>-->
+<!--            <to-view-id>/clients/editInvoiceData.xhtml</to-view-id>-->
+<!--            <redirect/>-->
+<!--        </navigation-case>-->
+    </navigation-rule>
+
+</faces-config>

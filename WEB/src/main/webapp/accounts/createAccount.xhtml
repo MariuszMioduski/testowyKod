@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="jakarta.faces.facelets"
+                xmlns="http://www.w3.org/1999/xhtml"
+                template="/templates/MainTemplate.xhtml"
+                xmlns:h="jakarta.faces.html"
+                xmlns:f="jakarta.faces.core">
+
+    <ui:define name="top">
+        <p>Utwórz konto</p>
+    </ui:define>
+
+    <ui:define name="left">
+        <ui:include src="/templates/menu.xhtml" />
+    </ui:define>
+
+    <ui:define name="content">
+            <h:messages />
+            <h:form id="createAccount">
+                <h:panelGrid columns="3" border="0">
+                    <h:column>login*: </h:column><h:column><h:inputText id="login" value="#{createAccountController.newAccount.login}"/></h:column><h:column><h:message for="login"/></h:column>
+                    <h:column>hasło*: </h:column><h:column><h:inputSecret id="password" value="#{createAccountController.newAccount.password}"/></h:column><h:column><h:message for="password"/></h:column>
+                    <h:column>powtórz hasło*: </h:column><h:column><h:inputSecret id="passwordRepeat" value="#{createAccountController.passwordRepeat}"/></h:column><h:column><h:message for="passwordRepeat"/></h:column>
+                    <h:column>email*: </h:column><h:column><h:inputText id="email" value="#{createAccountController.newAccount.email}"/></h:column><h:column><h:message for="email"/></h:column>
+                    <h:column>imię: </h:column><h:column><h:inputText id="firstName" value="#{createAccountController.newAccount.firstName}"/></h:column><h:column><h:message for="firstName"/></h:column>
+                    <h:column>nazwisko*: </h:column><h:column><h:inputText id="lastName" value="#{createAccountController.newAccount.lastName}"/></h:column><h:column><h:message for="lastName"/></h:column>
+                    <h:column>telefon*: </h:column><h:column><h:inputText id="phoneNumber" value="#{createAccountController.newAccount.phoneNumber}"/></h:column><h:column><h:message for="phoneNumber"/></h:column>
+
+
+                    <h:column>Alarmowy telefon*: </h:column><h:column><h:inputText id="workAlarmPhone" value="#{createAccountController.newAccount.workAlarmPhone}"/></h:column><h:column><h:message for="phoneNumber"/></h:column>
+
+                </h:panelGrid>
+                <p>
+                    <h:commandButton action="main" value="Anuluj" immediate="true"/>
+                    <h:commandButton action="#{createAccountController.createAsAdmin()}" onclick="return confirm('Utwórz administratora','Czy chcesz kontynuować')" style="font-weight: bold" value="Utwórz administratora"/>
+<!--                    <h:commandButton action="#{createAccountController.createAsEmployee()}" onclick="return confirm(`${msg['action.createEmployee']} : ${msg['general.confirmAction']}`)" style="font-weight: bold" value="${msg['action.createEmployee']}"/>-->
+                </p>
+            </h:form>
+    </ui:define>
+</ui:composition>

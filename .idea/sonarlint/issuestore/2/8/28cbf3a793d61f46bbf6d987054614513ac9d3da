@@ -1,0 +1,16 @@
+
+~	java:S116E"]Rename this field "InvidualObjectName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î”¬Ìúÿÿÿÿ8ŞòÌû§1
+H
+java:S2160"+Override the "equals" method in this class.(Ç€®ü8ŞòÌû§1
+b	java:S107U"AConstructor has 9 parameters, which is greater than 7 authorized.(´Š€±üÿÿÿÿ8™€Îû§1
+b	java:S107a"AConstructor has 8 parameters, which is greater than 7 authorized.(ˆ†Î¥úÿÿÿÿ8šÓóû§1
+]	java:S125"<This block of commented-out lines of code should be removed.(ŠÂ†Àûÿÿÿÿ8áòÌû§1
+X	java:S125*"<This block of commented-out lines of code should be removed.(ÏµĞ“8áòÌû§1
+X	java:S125~"<This block of commented-out lines of code should be removed.(ŞœÁ8äòÌû§1
+Y	java:S125Š"<This block of commented-out lines of code should be removed.(‹ÿ¢Ë8åòÌû§1
+Y	java:S125‘"<This block of commented-out lines of code should be removed.(Ÿ³ä³8åòÌû§1
+M
+java:S1128
+"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8åòÌû§1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8åòÌû§1

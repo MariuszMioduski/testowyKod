@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="jakarta.faces.facelets"
+                xmlns:f="jakarta.faces.core"
+                xmlns:h="jakarta.faces.html">
+    <h:form id="menu">
+        <h6>Test</h6>
+<!--        <ul>-->
+<!--            <li><h:link outcome="main" >${msg["menu.main"]}</h:link></li>-->
+<!--            <f:subview id="menuKontoNotLoggedIn" rendered="#{empty request.remoteUser}">-->
+<!--&lt;!&ndash;                <li><h:link outcome="registerClient" >${msg["menu.register"]}</h:link></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                <li><h:link outcome="authenticate" >${msg["menu.authenticate"]}</h:link></li>&ndash;&gt;-->
+<!--            </f:subview>-->
+<!--            <f:subview id="menuKontoLoggedIn" rendered="#{not empty request.remoteUser}">-->
+<!--                <li><b><i>${restSecurityContext.userName}</i></b></li>-->
+<!--                <ul>-->
+<!--                    <li><h:link outcome="changeSelfPassword" >${msg["menu.account.changeSelfPassword"]}</h:link></li>-->
+<!--                    <li><h:commandLink action="#{editAccountController.fetchSelfAccountData()}" >${msg["menu.account.editSelf"]}</h:commandLink></li>-->
+<!--                    <li><h:commandLink action="#{restSecurityContext.logout()}" value="${msg['menu.closeSession']}" /></li>-->
+<!--                </ul>-->
+<!--            </f:subview>-->
+<!--            <f:subview id="konto" rendered="true">-->
+<!--            <li>${msg["menu.accounts"]}</li>-->
+<!--            <ul>-->
+<!--                <li><h:link outcome="listAccounts" >${msg["menu.accounts.list"]}</h:link></li>-->
+<!--                <li><h:link outcome="createAccount" >${msg["menu.accounts.createAccount"]}</h:link></li>-->
+<!--            </ul>-->
+<!--            </f:subview>-->
+<!--            <f:subview id="employee" rendered="#{true or request.isUserInRole('EMPLOYEE')}">&lt;!&ndash; TODO remove true :) &ndash;&gt;-->
+<!--                <li>${msg["EMPLOYEE"]}</li>-->
+<!--                <ul>-->
+<!--                    <li><h:link outcome="listClientsForRent" >${msg["menu.createRentForClient"]}</h:link></li>-->
+<!--                    <li><h:link outcome="listClients" >${msg["menu.clients.list"]}</h:link></li>-->
+<!--                    <li><h:link outcome="listRents" >${msg["menu.rents.list"]}</h:link></li>-->
+<!--                </ul>-->
+<!--            </f:subview>-->
+<!--            <f:subview id="client" rendered="#{request.isUserInRole('CLIENT')}">-->
+<!--                <li>${msg["CLIENT"]}</li>-->
+<!--                <ul>-->
+<!--                    <li><h:commandLink action="#{rentVehicleController.fetchVehiclesForSelf()}" >${msg["menu.createRentForSelf"]}</h:commandLink></li>-->
+<!--                    <li><h:commandLink action="#{editInvoiceDataController.fetchSelfInvoiceData()}" >${msg["action.invoicedata.edit"]}</h:commandLink></li>-->
+<!--                </ul>-->
+<!--            </f:subview>-->
+<!--            <f:subview id="produktyKlient" rendered="#{request.isUserInRole('Klient')}">-->
+<!--            <li>${msg["menu.orders"]}</li>-->
+<!--            <ul>-->
+<!--                <li><h:link outcome="listOrdersClient" >${msg["menu.client.orders.list"]}</h:link></li>-->
+<!--                <li><h:link outcome="editMyOrder" rendered="#{zamowienieController.zamowienieSkladanieNiepuste}">${msg["menu.order.my"]}</h:link></li>-->
+<!--            </ul>-->
+<!--            <li>${msg["menu.products"]}</li>-->
+<!--            <ul>-->
+<!--                <li><h:link outcome="productListClient" >${msg["menu.vehicles.list"]}</h:link></li>-->
+<!--            </ul>-->
+<!--            </f:subview>-->
+<!--        </ul>-->
+    </h:form>
+</ui:composition>

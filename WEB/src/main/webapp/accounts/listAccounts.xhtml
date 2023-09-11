@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="jakarta.faces.facelets"
+                xmlns="http://www.w3.org/1999/xhtml"
+                template="/templates/MainTemplate.xhtml"
+                xmlns:h="jakarta.faces.html"
+                xmlns:f="jakarta.faces.core">
+
+    <ui:define name="top">
+        <p>Lista kont</p>
+    </ui:define>
+
+    <ui:define name="left">
+        <ui:include src="/templates/menu.xhtml" />
+    </ui:define>
+
+    <ui:define name="content">
+        <h:form id="listAccounts">
+            <h:dataTable border="1" value="#{listAccountsController.accounts}" var="account">
+                <h:column>
+                    <f:facet name="header">Login</f:facet>
+                    ${account.login}<br/>
+<!--                    <ui:param name="role" value="${account.role}" />-->
+<!--                    ${msg[role]}-->
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Rola</f:facet>
+                    ${account.role}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Dane personalne</f:facet>
+                    ${account.firstName} ${account.lastName} <br/>
+                    ${account.phoneNumber}<br/>
+                    ${account.email}<br/>
+                    ${account.workAlarmPhone}
+
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Aktywne</f:facet>
+                    <h:selectBooleanCheckbox value="${account.active}" disabled="true" />
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Potwierdzone</f:facet>
+                    <h:selectBooleanCheckbox value="${account.confirmed}" disabled="true" />
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Akcje</f:facet>
+                    <h:commandButton action="#{listAccountsController.delete(account.id)}" onclick="return confirm(`${account.login} : 'Usuń']} \\n Czy chcesz kontynuować''`)" value="Usuń"/>
+                    <h:commandButton action="#{listAccountsController.activate(account.id)}" value="Aktywuj" rendered="${not account.active}"/>
+                    <h:commandButton action="#{listAccountsController.deactivate(account.id)}" value="Deaktywuj" rendered="${account.active}"/>
+                    <h:commandButton action="#{listAccountsController.confirmed(account.id)}" value="Potwierdź" rendered="${ not account.confirmed}"/>
+                    <h:commandButton action="#{listAccountsController.edit(account.id)}" value="Edytuj" />
+                    <h:commandButton action="#{listAccountsController.changePassword(account.id, account.login)}" value="Zmień hasło" />
+                </h:column>
+            </h:dataTable>
+            <h:commandButton value="Wyjście" action="main" immediate="true"/>
+            <h:commandButton value="Odśwież" action="#{listAccountsController.init()}" />
+        </h:form>
+    </ui:define>
+</ui:composition>

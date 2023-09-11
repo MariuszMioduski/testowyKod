@@ -1,0 +1,14 @@
+
+x
+java:S1128
+"VRemove this unused import 'p.lodz.it.spjava.e13.ges.rest.converters.AccountConverter'.(ÚýŽ´üÿÿÿÿ8Üšðà§1
+q
+java:S1128"TRemove this unused import 'p.lodz.it.spjava.e13.ges.rest.converters.AdminConverter'.(ˆûÒô8Ýšðà§1
+r
+java:S1128"PRemove this unused import 'p.lodz.it.spjava.e13.ges.rest.managers.AdminService'.(Ï³¢‚ýÿÿÿÿ8Ýšðà§1
+l
+java:S1128"ORemove this unused import 'p.lodz.it.spjava.e13.ges.rest.model.accounts.Admin'.(û“ãœ8Ýšðà§1
+t
+java:S1128"XRemove this unused import 'p.lodz.it.spjava.e13.ges.rest.model.accounts.ServicemanType'.(¢““k8Ýšðà§1
+G
+java:S1068"*Remove this unused "logger" private field.(­ŒÙÞ8€²žß§1

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="jakarta.faces.facelets"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="jakarta.faces.html"
+                template="/templates/MainTemplate.xhtml">
+
+    <ui:define name="top">
+        <p>Strona główna</p>
+    </ui:define>
+
+    <ui:define name="left">
+        <ui:include src="/templates/menu.xhtml" />
+    </ui:define>
+
+    <ui:define name="content">
+        <p>Green Energy Service</p>
+        <ul>
+           <li> <h:link outcome="createServiceman">Create Serviceman</h:link></li>
+
+            <li><h:link outcome="createAdmin">Create Admin</h:link> </li>
+
+<!--            <li><h:link outcome="createServiceManager">Create ManagerService</h:link> </li>-->
+
+          <li> <h:link outcome="listAccounts">List of Accounts</h:link></li>
+
+          <li> <h:link outcome="editAccount">Edit Account</h:link> </li>
+
+        </ul>
+    </ui:define>
+
+</ui:composition>

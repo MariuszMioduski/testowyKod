@@ -1,0 +1,13 @@
+
+X
+java:S1948"6Make "servicemanRestClient" transient or serializable.(½¤Ø´øÿÿÿÿ8š¹Íà§1
+C
+java:S1948".Make "facesContext" transient or serializable.(ıß
+
+Q	java:S125E"<This block of commented-out lines of code should be removed.(ß…¿¥
+V	java:S125T"<This block of commented-out lines of code should be removed.(ïˆ‡ÿÿÿÿÿ
+Q	java:S125a"<This block of commented-out lines of code should be removed.(¶ÍÅ
+n
+java:S1128"QRemove this unused import 'p.lodz.it.spjava.e13.ges.dto.accounts.CreateAdminCmd'.(ìå‡½8¦¹Íà§1
+v
+java:S1128"TRemove this unused import 'p.lodz.it.spjava.e13.ges.web.restclient.AdminRestClient'.(úÆ³¸ıÿÿÿÿ8¦¹Íà§1

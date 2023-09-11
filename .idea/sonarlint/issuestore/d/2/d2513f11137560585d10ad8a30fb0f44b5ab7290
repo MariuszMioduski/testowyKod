@@ -1,0 +1,19 @@
+
+\
+java:S21842"FCast one of the operands of this multiplication operation to a "long".(¬’è
+H
+java:S1948"3Make "accountRestClient" transient or serializable.(ŒŠ˜
+D
+java:S1948".Make "conversation" transient or serializable.(Ø¿ò‰
+H
+java:S1948"2Make "updateAccountCmd" transient or serializable.(›ªç‡
+Q	java:S125"<This block of commented-out lines of code should be removed.(›ªç‡
+V	java:S125:"<This block of commented-out lines of code should be removed.(Íêßûÿÿÿÿ
+Y
+java:S1611F">Remove the parentheses around the "updateAccountCmd" parameter(öÂŠşÿÿÿÿ
+_
+java:S1117F"DRename "updateAccountCmd" which hides the field declared at line 30.(öÂŠşÿÿÿÿ
+T
+java:S1611L">Remove the parentheses around the "updateAccountCmd" parameter(Ü»Ñè
+Z
+java:S1117L"DRename "updateAccountCmd" which hides the field declared at line 30.(Ü»Ñè
